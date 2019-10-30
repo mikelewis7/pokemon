@@ -1,3 +1,17 @@
+
+#pokemon-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .pokemon {
-    color: red;
+    height: 50px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: green;
+    color: -moz-only-whitespace;
+    margin: 18px;
+    text-align: center;
+    padding-top: 30px;
+    color: lack;
 }

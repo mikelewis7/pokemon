@@ -1,168 +1,27 @@
-var pokemon = [
-  "Bulbasaur",
-  "Ivysaur",
-  "Venusaur",
-  "Charmander",
-  "Charmeleon",
-  "Charizard",
-  "Squirtle",
-  "Wartortle",
-  "Blastoise",
-  "Caterpie",
-  "Metapod",
-  "Butterfree",
-  "Weedle",
-  "Kakuna",
-  "Beedrill",
-  "Pidgey",
-  "Pidgeotto",
-  "Pidgeot",
-  "Rattata",
-  "Raticate",
-  "Spearow",
-  "Fearow",
-  "Ekans",
-  "Arbok",
-  "Pikachu",
-  "Raichu",
-  "Sandshrew",
-  "Sandslash",
-  "Nidoran",
-  "Nidorina",
-  "Nidoqueen",
-  "Nidoran",
-  "Nidorino",
-  "Nidoking",
-  "Clefairy",
-  "Clefable",
-  "Vulpix",
-  "Ninetales",
-  "Jigglypuff",
-  "Wigglytuff",
-  "Zubat",
-  "Golbat",
-  "Oddish",
-  "Gloom",
-  "Vileplume",
-  "Paras",
-  "Parasect",
-  "Venonat",
-  "Venomoth",
-  "Diglett",
-  "Dugtrio",
-  "Meowth",
-  "Persian",
-  "Psyduck",
-  "Golduck",
-  "Mankey",
-  "Primeape",
-  "Growlithe",
-  "Arcanine",
-  "Poliwag",
-  "Poliwhirl",
-  "Poliwrath",
-  "Abra",
-  "Kadabra",
-  "Alakazam",
-  "Machop",
-  "Machoke",
-  "Machamp",
-  "Bellsprout",
-  "Weepinbell",
-  "Victreebel",
-  "Tentacool",
-  "Tentacruel",
-  "Geodude",
-  "Graveler",
-  "Golem",
-  "Ponyta",
-  "Rapidash",
-  "Slowpoke",
-  "Slowbro",
-  "Magnemite",
-  "Magneton",
-  "Farfetch'd",
-  "Doduo",
-  "Dodrio",
-  "Seel",
-  "Dewgong",
-  "Grimer",
-  "Muk",
-  "Shellder",
-  "Cloyster",
-  "Gastly",
-  "Haunter",
-  "Gengar",
-  "Onix",
-  "Drowzee",
-  "Hypno",
-  "Krabby",
-  "Kingler",
-  "Voltorb",
-  "Electrode",
-  "Exeggcute",
-  "Exeggutor",
-  "Cubone",
-  "Marowak",
-  "Hitmonlee",
-  "Hitmonchan",
-  "Lickitung",
-  "Koffing",
-  "Weezing",
-  "Rhyhorn",
-  "Rhydon",
-  "Chansey",
-  "Tangela",
-  "Kangaskhan",
-  "Horsea",
-  "Seadra",
-  "Goldeen",
-  "Seaking",
-  "Staryu",
-  "Starmie",
-  "Mr.Mime",
-  "Scyther",
-  "Jynx",
-  "Electabuzz",
-  "Magmar",
-  "Pinsir",
-  "Tauros",
-  "Magikarp",
-  "Gyarados",
-  "Lapras",
-  "Ditto",
-  "Eevee",
-  "Vaporeon",
-  "Jolteon",
-  "Flareon",
-  "Porygon",
-  "Omanyte",
-  "Omastar",
-  "Kabuto",
-  "Kabutops",
-  "Aerodactyl",
-  "Snorlax",
-  "Articuno",
-  "Zapdos",
-  "Moltres",
-  "Dratini",
-  "Dragonair",
-  "Dragonite",
-  "Mewtwo",
-  "Mew"
-];
-
-document.addEventListener("DOMContentLoaded", function() {
-  var pokeList = document.getElementById("pokemon-list");
-  for (var i = 0; i < pokemon.length; i++) {
-    addPokemon(pokemon[i], pokeList);
-  }
-});
-
-function addPokemon(name, list) {
-  var newPokemon = document.createElement("div");
-  newPokemon.innerText = name;
-  newPokemon.classList.add("pokemon");
-  list.appendChild(newPokemon);
+// // to creat an element and add to the dom
+// // creat an element
+// var myfirstEl = document.createElement('li'); 
+// // add info and classes to the element 
+// myfirstEl.innerHtml = 'Charizard';
+// myfirstEl.classList.add('pokemon');
+// // grab element already in the dom that will house nwew el.
+// var pokeList = document.getElementById('pokemon');
+// // append new element to parent
+// pokeList.appendChild(myFirstEl);
+for (var i = 0; i < pokemonNames.length; i++) {
+addPokemon(pokemonNames[i]);
 }
-// Event listener, "DomContentloaded"
+function addPokemon(name) {
+  // 1 - create element
+  var pokeEl = document.createElement('div')
+  // 2 cusomize the element
+  pokeEl.innerText = name;
+  pokeEl.classList.add('pokemon');
+  // 3- get future parent
+  var pokeList =document.getElementById('pokemon-list');
+  // 4- append new element to parent
+  pokeList.appendChild(pokeEl);
+}
+
+//console.log(pokemon[i]);
+//function is an old peice of code that works.
